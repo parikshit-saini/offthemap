@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Off the Map</title>
+    <!-- Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./stylesheet/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header  -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="./assets/off_the_map_logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Why us </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-theme">Contact</button>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main  -->
+
+    <section class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="content">
+                        <h1>Welcome to <br><span>“Off the map” </span> </h1>
+                        <p>where we transform your dreams to timeless tales.</p>
+                        <button class="btn btn-support">
+                            Contact
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-center mb-4 text-light">Contact Us Now!</h3>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#travelers">Travelers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#travelCompanies">Travel Companies</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane container active" id="travelers">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="inputField">
+                                            <label for="">Name</label>
+                                            <input type="text" class="form-control" placeholder="Enter Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inputField">
+                                            <label for="">Contact Number</label>
+                                            <input type="text" class="form-control" placeholder="Enter Contact Number">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inputField">
+                                            <label for="">Email <span>(OPTIONAL)</span></label>
+                                            <input type="text" class="form-control" placeholder="Enter Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inputField">
+                                            <label for="">Source</label>
+                                            <input type="text" class="form-control" placeholder="Enter Source">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inputField">
+                                            <label for="">Destination</label>
+                                            <input type="text" class="form-control" placeholder="Enter Destination">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inputField">
+                                            <label for="">Number of Travelers </label>
+                                            <input type="number" class="form-control" min="1" max="100"
+                                                placeholder="Enter Number of Travelers">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inputField">
+                                            <label for="">Budget</label>
+                                            <input type="text" class="form-control" placeholder="Enter your budget">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inputField">
+                                            <label for="">Dates <span>(fixed or flexible)</span></label>
+                                            <input type="date" class="form-control" placeholder="Enter your budget">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="inputField">
+                                            <label for="">Specific requirement/arrangement needed ( if any)</label>
+                                            <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2">
+                                        <button class="btn btn-theme w-100">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane container fade" id="travelCompanies">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="inputField">
+                                            <label for="">Name of the Company</label>
+                                            <input type="text" class="form-control" placeholder="Enter Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inputField">
+                                            <label for="">Contact Number</label>
+                                            <input type="text" class="form-control" placeholder="Enter Contact Number">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inputField">
+                                            <label for="">Email</label>
+                                            <input type="text" class="form-control" placeholder="Enter Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inputField">
+                                            <label for="">Number of bookings per month</label>
+                                            <input type="text" class="form-control" placeholder="Enter Source">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inputField">
+                                            <label for="">Expertise</label>
+                                            <select name="" id="" class="form-control">
+                                                <option selected disabled>Select</option>
+                                                <option value="">National</option>
+                                                <option value="">International</option>
+                                                <option value="">Both</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inputField">
+                                            <label for="">Number of Travelers </label>
+                                            <input type="number" class="form-control" min="1" max="100"
+                                                placeholder="Enter Number of Travelers">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inputField">
+                                            <label for="">Budget</label>
+                                            <input type="text" class="form-control" placeholder="Enter your budget">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inputField">
+                                            <label for="">Dates <span>(fixed or flexible)</span></label>
+                                            <input type="date" class="form-control" placeholder="Enter your budget">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="inputField">
+                                            <label for="">Specific requirement/arrangement needed ( if any)</label>
+                                            <textarea name="" id="" rows="3" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2">
+                                        <button class="btn btn-theme w-100">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center">About Us</h2>
+                    <p class="text-center">Whether you search for adrenaline escapes or a wonderful soul enchanting
+                        destination, we are your
+                        go-to tour operators in India. We are dedicated to being the best travel agency in India by
+                        having connections with Airbnb, offering explorative experiences for both your short and long
+                        stays. By taking the requirement of our customers into consideration we curate the best travel
+                        plan by networking with Airbnb, and open the gates of exploration, providing you the vacation,
+                        you need to turn your dreams to timeless tales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="choose">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <h2 class="text-center">Why choose off the map?</h2>
+                    <p class="text-center">Choosing off the map means opting for the experience of which you have been
+                        waiting for ensuring
+                        your highest level of satisfaction and travel memories. The perks we offer include,</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mt-5 mx-auto">
+                    <div class="chooseCard">
+                        <div class="icon">
+                            <img src="./assets/expertGuidance.svg" alt="">
+                        </div>
+                        <h3>Expert guidance</h3>
+                        <p>We have a team of experienced professionals who bring up knowledge and passion at your desk
+                            on every expedition, ensuring your safety and valuing your needs.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5 mx-auto">
+                    <div class="chooseCard">
+                        <div class="icon">
+                            <img src="./assets/LocalContact.svg" alt="">
+                        </div>
+                        <h3>Local contact and assistance 24/7</h3>
+                        <p>It may be challenging when you navigate through a new location, but we got your back with our
+                            extensive network of local contacts and round the time assistance where you get all your
+                            travel needs fulfilled.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5 mx-auto">
+                    <div class="chooseCard">
+                        <div class="icon">
+                            <img src="./assets/specialArrangement.svg" alt="">
+                        </div>
+                        <h3>Special arrangement for occasions</h3>
+                        <p>We go above and beyond the destination to make your special day feel more extraordinary. Our
+                            team meticulously plans and coordinate your special day by adding the sprinkle of assistance
+                            and execution of your need in details.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5 mx-auto">
+                    <div class="chooseCard">
+                        <div class="icon">
+                            <img src="./assets/Airbnb.svg" alt="">
+                        </div>
+                        <h3>Airbnb and services</h3>
+                        <p>Our staycations offer modern amenities with the charm of local cultural extravaganza. We
+                            understand your requirements and navigate through Airbnb as well that ensures your
+                            accommodations enhance your experience widely.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5 mx-auto">
+                    <div class="chooseCard">
+                        <div class="icon">
+                            <img src="./assets/customizedItineraries.svg" alt="">
+                        </div>
+                        <h3>Customized Itineraries and trending destinations</h3>
+                        <p>Experience the best of both luxury and adventure at off the maps. Indulge yourself with
+                            lavish accommodation, gourmet cuisine and personalized services amidst breathtaking
+                            landscapes. We always stay ahead of the curve by bringing you the gush of trending
+                            destinations. </p>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5 mx-auto">
+                    <div class="chooseCard">
+                        <div class="icon">
+                            <img src="./assets/monthlyDiscounts.svg" alt="">
+                        </div>
+                        <h3>Monthly discounts</h3>
+                        <p>We offer special monthly discounts frequently making your dream destination more affordable
+                            and accessible.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="adventure">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="text-center mb-4">Explore the <span>hidden treasures</span> of our signature adventures
+                    </h2>
+                    <p class="text-center">At off the map, we are determined to connect you soulfully to the bliss of
+                        nature, culture, and
+                        authentic adventure with precision in our tours and travel planning. As the best agency of
+                        Odisha, we pride ourselves on crafting unique experiences that cater to all travelers, embarking
+                        on our mission to become the best tour operators in India. We offer</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 m-auto">
+                    <div class="row mt-5">
+                        <div class="col-md-5">
+                            <img src="./assets/Mountain_trekking.png" alt="">
+                        </div>
+                        <div class="col-md-7">
+                            <h3>Mountain trekking</h3>
+                            <p>We scale you to explore the majestic peaks in India with our expert guidance which
+                                ensures your safety and exhilarating trek experiences. We ensure our travel enthusiasts
+                                buckle themselves to conquer the fear of heights and unveil the lifetime experience of
+                                the breathtaking panoramic view the nature offers.</p>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-7">
+                            <h3>Jungle safari</h3>
+                            <p>India can be never forbidden from the dense green and lush jungles across vast spread of
+                                land. We bring the thrill of witnessing wildlife in their natural habitat. Our safari
+                                takes you to the national parks offering the glimpse you have been waiting for. Being
+                                one of the top operators, we ensure that you feel the vibrant ecosystem all around.</p>
+                        </div>
+                        <div class="col-md-5 text-end">
+                            <img src="./assets/Jungle_safari.png" alt="">
+                        </div>
+                    </div>
+
+
+
+                    <div class="row mt-5">
+                        <div class="col-md-5">
+                            <img src="./assets/River_rafting.png" alt="">
+                        </div>
+                        <div class="col-md-7">
+                            <h3>River rafting</h3>
+                            <p>Feel the rush of adrenaline while you navigate through the twist and turns of the rushing
+                                waters where each turn ensures the thrilling life long experience. Whether you are an
+                                enthusiast wanting to test their adventure limit or a newbie, our river rafting
+                                experiences are made to add the timeless tales to your story.</p>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-md-7">
+                            <h3>Rock climbing</h3>
+                            <p>We provide rock climbing experiences which are both rewarding and challenging where the
+                                routes are catered for both the requirements of beginners and seasoned climbers. So,
+                                buckle yourself to push the boundaries with our expeditions.</p>
+                        </div>
+                        <div class="col-md-5 text-end">
+                            <img src="./assets/Rock_climbing.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-5">
+                            <img src="./assets/Cave_explorations.png" alt="">
+                        </div>
+                        <div class="col-md-7">
+                            <h3>Cave explorations</h3>
+                            <p>When it comes to the history of India, the country offers explorative caves, hidden from
+                                the prying eyes of the world. From volcanic formation to limestone caves, the journey we
+                                offer through the ancient wonders will be worth it. Our tours and travels are specially
+                                designed to ensure the proper exploration with expertise and safety.</p>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-7">
+                            <h3>Religious travel</h3>
+                            <p>At off the map, we ensure your spiritual journey to India’s most widely known
+                                destinations, including the Char Dham Yatra and Amarnath Yatra. Experience the divine
+                                presence in the sacred air with our expertly planned travel plans.</p>
+                        </div>
+                        <div class="col-md-5 text-end">
+                            <img src="./assets/Religious_travel.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-12 text-center">
+                            <p>Off the map is in focus not just for the exceptional travel stories we offer but also as
+                                a top choice for international tours, corporate travel planning and your family
+                                staycation. Whether you are looking for the best tour and travels near you or planning
+                                to craft your dreams into reality, Off the map is always for your travel services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="journey">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center">Locally immersive journey</h2>
+                    <p class="text-center">Is travelling all about visiting new destinations? More than that it is about
+                        experiencing and
+                        understanding the world through new perspectives, hearing more local stories, exploring more
+                        dimensions about the location. We provide</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-3 px-0">
+                    <img src="./assets/Homestay.png" alt="">
+                </div>
+                <div class="col-lg-3 bg-theme p-4">
+                    <h4>Homestay with local families</h4>
+                    <p>We offer you an affectionate homestay where you get to stay with host families and understand the
+                        beauty of local lifestyle. These experiences provide an authentic connection with culture,
+                        traditional and daily lives of the communities you visit.</p>
+
+
+                </div>
+                <div class="col-lg-3 px-0">
+                    <img src="./assets/Social_Impact_Travel.png" alt="">
+                </div>
+                <div class="col-lg-3 bg-theme p-4">
+                    <h4>Social Impact Travel</h4>
+                    <p>Alongside travelling, you offer you to participate in community-driven projects where you
+                        volunteer for opportunity and activities that foster positive change and cultural exchange.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Odisha">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Serving <span>Odisha</span> and beyond</h2>
+                    <p class="mb-4">We recognize being the best travel agency in Odisha leading name among the top tour
+                        and travel
+                        providers. Whether you are searching for services for domestic trips or to explore beyond
+                        international boundaries, we are dedicated to make your travel dreams to dreamy reality.</p>
+                    <p>We are your one stop solution to streamline your business travel, planning your family vacations,
+                        solo escapades and having your memorable international trips.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="./assets/Odisha.png" alt="" class="w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="photoGallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#Maldives">Maldives</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#Munnar">Munnar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#Religious">Religious</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#Thailand">Thailand</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane container active" id="Maldives">
+                            <div class="row">
+                                <div class="col-12 mt-4">
+                                    <h3 class="text-center">Maldives </h3>
+                                </div>
+                                <div class="col-xl-3 col-md-4 col-sm-6 mt-4"><img src="./assets/Gallery/MALDIVES_1.png"
+                                        alt="">
+                                </div>
+                                <div class="col-xl-3 col-md-4 col-sm-6 mt-4"><img src="./assets/Gallery/MALDIVES_2.png"
+                                        alt="">
+                                </div>
+                                <div class="col-xl-3 col-md-4 col-sm-6 mt-4"><img src="./assets/Gallery/MALDIVES_3.png"
+                                        alt="">
+                                </div>
+                                <div class="col-xl-3 col-md-4 col-sm-6 mt-4"><img src="./assets/Gallery/MALDIVES_4.png"
+                                        alt="">
+                                </div>
+                                <div class="col-xl-3 col-md-4 col-sm-6 mt-4"><img src="./assets/Gallery/MALDIVES_5.png"
+                                        alt="">
+                                </div>
+                                <div class="col-xl-3 col-md-4 col-sm-6 mt-4"><img src="./assets/Gallery/MALDIVES_6.png"
+                                        alt="">
+                                </div>
+                                <div class="col-xl-3 col-md-4 col-sm-6 mt-4"><img src="./assets/Gallery/MALDIVES_7.png"
+                                        alt="">
+                                </div>
+                                <div class="col-xl-3 col-md-4 col-sm-6 mt-4"><img src="./assets/Gallery/MALDIVES_8.png"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade" id="Munnar">
+                            <div class="row">
+                                <div class="col-12 mt-4">
+                                    <h3 class="text-center">Heaven on earth? It’s called Munnar, India. </h3>
+                                </div>
+                                <div class="col-lg-3 col-sm-2 mt-4"><img src="./assets/Gallery/MUNNAR_1.png" alt="">
+                                </div>
+                                <div class="col-lg-3 col-sm-2 mt-4"><img src="./assets/Gallery/MUNNAR_2.png" alt="">
+                                </div>
+                                <div class="col-lg-3 col-sm-2 mt-4"><img src="./assets/Gallery/MUNNAR_3.png" alt="">
+                                </div>
+                                <div class="col-lg-3 col-sm-2 mt-4"><img src="./assets/Gallery/MUNNAR_4.png" alt="">
+                                </div>
+                                <div class="col-lg-3 col-sm-2 mt-4"><img src="./assets/Gallery/MUNNAR_5.png" alt="">
+                                </div>
+                                <div class="col-lg-3 col-sm-2 mt-4"><img src="./assets/Gallery/MUNNAR_6.png" alt="">
+                                </div>
+                                <div class="col-lg-3 col-sm-2 mt-4"><img src="./assets/Gallery/MUNNAR_7.png" alt="">
+                                </div>
+                                <div class="col-lg-3 col-sm-2 mt-4"><img src="./assets/Gallery/MUNNAR_8.png" alt="">
+                                </div>
+                                <div class="col-lg-3 col-sm-2 mt-4"><img src="./assets/Gallery/MUNNAR_9.png" alt="">
+                                </div>
+                                <div class="col-lg-3 col-sm-2 mt-4"><img src="./assets/Gallery/MUNNAR_10.png" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane container fade" id="Religious">
+                            <div class="row">
+
+                                <div class="col-12 mt-4">
+                                    <h3 class="text-center">Religious </h3>
+                                </div>
+                                <div class="col-lg-3 col-sm-2 mt-4"><img src="./assets/Gallery/RELIGIOUS_1.png" alt="">
+                                </div>
+                                <div class="col-lg-3 col-sm-2 mt-4"><img src="./assets/Gallery/RELIGIOUS_2.png" alt="">
+                                </div>
+                                <div class="col-lg-3 col-sm-2 mt-4"><img src="./assets/Gallery/RELIGIOUS_3.png" alt="">
+                                </div>
+                                <div class="col-lg-3 col-sm-2 mt-4"><img src="./assets/Gallery/RELIGIOUS_4.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade" id="Thailand">
+                            <div class="row">
+                                <div class="col-12 mt-4">
+                                    <h3 class="text-center">Unlock the wonders of Thailand: Your tropical Paradise
+                                        awaits. </h3>
+                                </div>
+                                <div class="col-lg-3 col-sm-2 mt-4"><img src="./assets/Gallery/THAILAND_1.png" alt="">
+                                </div>
+                                <div class="col-lg-3 col-sm-2 mt-4"><img src="./assets/Gallery/THAILAND_2.png" alt="">
+                                </div>
+                                <div class="col-lg-3 col-sm-2 mt-4"><img src="./assets/Gallery/THAILAND_3.png" alt="">
+                                </div>
+                                <div class="col-lg-3 col-sm-2 mt-4"><img src="./assets/Gallery/THAILAND_4.png" alt="">
+                                </div>
+                                <div class="col-lg-3 col-sm-2 mt-4"><img src="./assets/Gallery/THAILAND_5.png" alt="">
+                                </div>
+                                <div class="col-lg-3 col-sm-2 mt-4"><img src="./assets/Gallery/THAILAND_6.png" alt="">
+                                </div>
+                                <div class="col-lg-3 col-sm-2 mt-4"><img src="./assets/Gallery/THAILAND_7.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <img src="./assets/Off the Map_transparent.png" alt="">
+                </div>
+                <div class="col-12">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Why us</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-12">
+                    <p>Subscribe to our news letter</p>
+                </div>
+                <div class="col-12">
+                    <div class="newsLetter">
+                        <div class="form">
+                            <input type="text" class="form-control" placeholder="Enter your mail">
+                            <button class="btn btn-send" type="submit" name="submit"><i
+                                    class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="mb-0">All rights reserves</p>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>

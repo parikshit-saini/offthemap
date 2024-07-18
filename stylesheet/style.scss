@@ -1,0 +1,419 @@
+// Google font 
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Jost", sans-serif;
+}
+
+// Common Color 
+
+$primary: #0D726C;
+$support: #FDD84C;
+$text: #333333;
+$light: #ffffff;
+
+
+// Common button
+
+.btn,
+input {
+    box-shadow: none;
+}
+
+.btn {
+    &:hover {
+        color: $light;
+    }
+}
+
+.btn-theme {
+    background-color: $primary;
+    color: $light;
+    border-radius: 12px;
+}
+
+.btn-support {
+    background-color: $support;
+    color: $text;
+    border-radius: 12px;
+}
+
+// Header 
+
+@mixin commonStyle() {
+    padding: 80px 0;
+
+    h2 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    h4 {
+        font-size: 20;
+    }
+
+    p {
+        max-width: 768px;
+        margin: auto;
+    }
+}
+
+header {
+    nav {
+        .navbar-brand {
+            img {
+                width: 95px;
+            }
+        }
+
+        .navbar-nav {
+            gap: 25px;
+
+
+            .nav-item {
+                .nav-link {
+                    color: $text;
+                    font-weight: 500;
+
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section.main {
+    background-image: url("../assets/background_image.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+
+    .content {
+        max-width: 334px;
+        color: $light;
+
+        h1 {
+            font-size: 50px;
+
+            span {
+                color: $support;
+            }
+        }
+
+        p {
+            font-size: 30px;
+        }
+    }
+
+    .nav-tabs {
+        background-color: rgba($color: $support, $alpha: 0.2);
+        padding: 5px;
+        width: fit-content;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin: auto;
+
+        .nav-item {
+
+            .nav-link {
+                background-color: rgba($color: $primary, $alpha: 0.2);
+                border-radius: 8px;
+                color: $light;
+
+                &:hover {
+                    border: 1px solid $light;
+                }
+
+                &.active {
+                    background-color: #0D726C;
+                    color: $light;
+                }
+            }
+        }
+    }
+
+
+
+    form {
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 7px 7px 12px 11px rgba(0, 0, 0, 0.12);
+        backdrop-filter: blur(5px);
+        border-radius: 10px;
+        padding: 15px;
+        margin-top: 25px;
+
+        .inputField {
+            margin-bottom: 10px;
+
+            label {
+                color: $light;
+                margin-bottom: 5px;
+            }
+
+            input,
+            select {
+                height: 40px;
+            }
+
+            input,
+            textarea,
+            select {
+                border-radius: 10px;
+                border: 1px solid transparent;
+                background-color: rgba($color: $light, $alpha: 0.8);
+
+                &:focus {
+                    box-shadow: none;
+                    border-color: $primary;
+                }
+            }
+        }
+
+    }
+}
+
+section.about {
+    background-color: $primary;
+    @include commonStyle();
+    color: $light;
+
+    h2 {
+        color: $support;
+    }
+
+}
+
+section.choose {
+    @include commonStyle();
+
+    .chooseCard {
+        background: #FFFFFF;
+        box-shadow: 4px 4px 35px rgba(0, 0, 0, 0.09);
+        border-radius: 12px;
+        padding: 20px;
+        max-width: 356px;
+        height: 100%;
+
+        .icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $primary;
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+    }
+}
+
+section.adventure {
+    @include commonStyle();
+
+    h2 {
+        max-width: 565px;
+        margin: auto;
+
+        span {
+            color: $primary;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+}
+
+section.journey {
+    @include commonStyle();
+
+    .bg-theme {
+        background-color: $primary;
+        color: $light;
+
+        h4 {
+            color: $support;
+        }
+
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+section.Odisha {
+    @include commonStyle();
+
+    h2 {
+
+        span {
+            color: $primary;
+        }
+    }
+}
+
+section.photoGallery {
+    @include commonStyle();
+
+    .nav-tabs {
+        background-color: rgba($color: $primary, $alpha: 0.2);
+        padding: 5px;
+        width: fit-content;
+        border-radius: 12px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin: auto;
+
+        .nav-item {
+
+            .nav-link {
+                background-color: rgba($color: $primary, $alpha: 0.2);
+                border-radius: 8px;
+                color: $text;
+
+                &:hover {
+                    border: 1px solid $primary;
+                }
+
+                &.active {
+
+                    background-color: #0D726C;
+                    color: $light;
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        .tab-pane {
+            img {
+                width: 100%;
+                height: 370px;
+                object-fit: cover;
+                border-radius: 12px;
+            }
+        }
+    }
+}
+
+
+footer {
+    background-color: rgba($color: $primary, $alpha: 0.2);
+    padding-top: 80px;
+
+
+    img {
+        width: 200px;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        list-style: none;
+        margin-top: 25px;
+
+        li {
+            a {
+                font-size: 16px;
+                text-decoration: none;
+                color: $text;
+                font-weight: 500;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    p {
+        font-weight: 700;
+    }
+
+    .newsLetter {
+        max-width: 372px;
+        margin: auto;
+
+        .form {
+            position: relative;
+
+            input {
+
+                border-radius: 12px;
+                height: 50px;
+                width: 100%;
+                padding: 10px 73px 10px 10px;
+                background-color: rgba($color: $primary, $alpha: 0.2);
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+
+            .btn-send {
+                background-color: rgba($color: $primary, $alpha: 0.5);
+                color: $support;
+                border-radius: 12px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 50px;
+                width: 73px;
+
+                i {
+                    font-size: 20px;
+                }
+
+            }
+
+        }
+
+    }
+
+    .copyright {
+        background-color: $primary;
+        padding: 10px 0;
+        margin-top: 80px;
+        text-align: center;
+        color: $light;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    section.photoGallery {
+        .tab-content {
+            .tab-pane {
+                img {
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
